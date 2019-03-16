@@ -1,0 +1,26 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <form id="btn1" hidden action="https://api.stripe.com/v1/charges" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_q6tSce41Xe6j7aEKcj02td4F"
+              data-amount="999"
+              data-name="Demo Site"
+              data-description="Example charge"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-locale="auto">
+
+
+
+            </script>
+          </form>
+    </body>
+</html>
+
+<script>
+var btn1 = document.querySelector('#btn1 button');
+btn1.click();
+</script>
